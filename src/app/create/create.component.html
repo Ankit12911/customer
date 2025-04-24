@@ -1,0 +1,20 @@
+<form (ngSubmit)="onSubmit()" #customerForm="ngForm">
+    <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" class="form-control" name="name" [(ngModel)]="customerName" required placeholder="Enter customer name" />
+    </div>
+
+    <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" class="form-control" name="email" [(ngModel)]="customerEmail" required placeholder="Enter customer email" />
+    </div>
+
+    <div class="form-group">
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" class="form-control" name="phone"[(ngModel)]="customerPhone" required placeholder="Enter customer phone number" />
+    </div>
+
+    <button type="submit" class="btn btn-primary" [disabled]="!customerForm.valid">
+        Add Customer
+    </button>
+</form>

@@ -1,0 +1,28 @@
+
+<div class="sidebar">
+    <ul>
+      <li><a routerLink="/" routerLinkActive="active">Home</a></li>
+      <li><a routerLink="/create" routerLinkActive="active">Create</a></li>
+      <li><a routerLink="/edit/:id" routerLinkActive="active">Edit</a></li>
+        
+
+        <li><a routerLink="/delete/:id" routerLinkActive="active">Delete</a></li>
+        <li><a routerLink="/about" routerLinkActive="active">About</a></li>
+
+
+        <li><a routerLink="/contact" routerLinkActive="active">Contact</a></li>
+        <li><a routerLink="/help" routerLinkActive="active">Help</a></li>
+        <li><a routerLink="/settings" routerLinkActive="active">Settings</a></li>
+
+
+        <li><a routerLink="/logout" routerLinkActive="active">Logout</a></li>
+
+        <li><a routerLink="/profile" routerLinkActive="active">Profile</a></li>
+    </ul>
+  </div>
+  
+
+  <div class="content">
+    <router-outlet></router-outlet>
+  </div>
+  
